@@ -300,10 +300,27 @@ section {
   font-size: 18px;
   font-weight: bold;
   line-height: 40px;
+  /* margin-right: 130px; */
 }
 
+.nav-own {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-own .navbar-header {
+  flex: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-own {
+    display: block;
+  }
+}
+
+
 .custom-navbar .navbar-nav.navbar-nav-first {
-  margin-left: 8em;
+  /* margin-left: 8em; */
 }
 
 .custom-navbar .navbar-nav.navbar-nav-first li a i {
@@ -1200,6 +1217,7 @@ main>section:nth-child(even) {
 
 .form-control-own {
   margin-bottom: 24px;
+  flex: 1
 }
 
 .form-control-own label {
@@ -1217,11 +1235,21 @@ main>section:nth-child(even) {
   outline: none !important;
 }
 
+.form-control-own textarea {
+  width: 100%;
+  outline: none !important;
+  resize: none;
+}
+
 .form-control-own input:focus {
   box-shadow: 0px 0px 6px #0d646d;
 }
 
 .form-control-own select:focus {
+  box-shadow: 0px 0px 6px #0d646d;
+}
+
+.form-control-own textarea:focus {
   box-shadow: 0px 0px 6px #0d646d;
 }
 
@@ -1237,6 +1265,7 @@ form .down a {
 }
 
 .btn-submit {
+  cursor: pointer;
   height: 40px;
   background: #EC9E58;
   border-radius: 5px;
@@ -1291,6 +1320,10 @@ form .down a {
   border-radius: 50%;
 }
 
+/* Register end */
+
+/* Employee and Employer */
+
 #employee-register {
   display: flex;
   flex-direction: column;
@@ -1340,3 +1373,100 @@ form .down a {
     display: block;
   }
 }
+
+/* Employee and Employer end */
+/* Employee and Employer profiles */
+#employee-profile {
+  padding: 40px 24px;
+
+}
+
+#employee-profile .title {
+  text-align: center;
+}
+
+#employee-profile .line {
+  margin: 0 auto;
+}
+
+#employee-profile .employee-profile-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 40px;
+
+}
+
+#employee-profile .employee-profile-section .left {
+  flex: 1
+}
+
+#employee-profile .employee-profile-section .left .btn-submit {
+  margin-left: 0;
+  width: 100%;
+  margin-top: 24px;
+}
+
+#employee-profile .employee-profile-section .right {
+  padding: 24px;
+  background-color: #edeeef;
+  flex: 3
+}
+
+#employee-profile .employee-profile-section .left .user-img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 580px) {
+  #employee-profile .employee-profile-section {
+    display: block;
+  }
+
+  #employee-profile .employee-profile-section .left {
+    margin-bottom: 24px;
+  }
+
+  #employee-profile .employee-profile-section .left .user-img {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+/* UPLOAD IMG */
+.upload-img #file1 {
+  display: none;
+}
+
+.upload-img img {
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  background-color: #ffffff;
+}
+
+.upload-img img.default {
+  border: 2px gray dashed;
+  padding: 23px;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+#employee-profile .employee-profile-section .right .btn-submit {
+  width: 200px;
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  #employee-profile .employee-profile-section .right .btn-submit {
+    width: 100%;
+  }
+}
+
+
+
+
+/* Employee and Employer profiles end */
