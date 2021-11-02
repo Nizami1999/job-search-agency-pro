@@ -1466,7 +1466,17 @@ form .down a {
   }
 }
 
-
-
-
 /* Employee and Employer profiles end */
+
+input[type="text"][disabled] {
+  background-color: white;
+}
+
+.navbar-collapse .dropdown-menu .dropdown-toggle {
+  display: none;
+}
+
+/* 
+.custom-navbar .nav li a:nth-child(1) {
+  line-height: 0px;
+} */
