@@ -1405,6 +1405,8 @@ form .down a {
   margin-left: 0;
   width: 100%;
   margin-top: 24px;
+  text-align: center;
+  color: white;
 }
 
 #employee-profile .employee-profile-section .right {
@@ -1417,6 +1419,7 @@ form .down a {
   height: 300px;
   width: 300px;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 580px) {
@@ -1453,6 +1456,10 @@ form .down a {
   height: 100px;
   width: 100px;
   object-fit: cover;
+}
+
+#employee-profile .employee-profile-section .right {
+  border-radius: 5px;
 }
 
 #employee-profile .employee-profile-section .right .btn-submit {
