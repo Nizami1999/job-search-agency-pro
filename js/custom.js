@@ -101,4 +101,15 @@
       };
     }
   });
+
+  $(function () {
+    $("div.comment-load").slice(0, 4).show();
+    $("#loadMore").on("click", function (e) {
+      e.preventDefault();
+      $("div.comment-load:hidden").slice(0, 4).slideDown();
+      if ($("div.comment-load:hidden").length == 0) {
+        $("#load").fadeOut("slow");
+      }
+    });
+  });
 })(jQuery);

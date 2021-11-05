@@ -760,7 +760,7 @@ section {
   -----------------------------------------*/
 
 #contact {
-  background: #3f51b5;
+  background: #edeeef;
 }
 
 #contact h2 {
@@ -1487,3 +1487,90 @@ input[type="text"][disabled] {
 .custom-navbar .nav li a:nth-child(1) {
   line-height: 0px;
 } */
+
+
+/* Contact */
+
+#contact .contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  padding: 20px;
+  background-color: #0d646d;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+#contact .contact-info i {
+  font-size: 20px;
+}
+
+#contact .contact-info h4 {
+  color: #ffffff !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-weight: 300;
+}
+
+#contact input:focus {
+  box-shadow: 0px 0px 6px #0d646d;
+}
+
+#contact textarea:focus {
+  box-shadow: 0px 0px 6px #0d646d;
+}
+
+
+/* Comment Load */
+div.comment-load {
+  display: none;
+  padding: 10px;
+  border-width: 0 1px 1px 0;
+  border-style: solid;
+  border-color: #fff;
+  box-shadow: 0 1px 1px #ccc;
+  margin-bottom: 5px;
+  background-color: #f1f1f1;
+}
+
+#loadMore {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  background-color: #0d646d;
+  color: #fff;
+  border-width: 0 1px 1px 0;
+  border-style: solid;
+  border-color: #fff;
+  box-shadow: 0 1px 1px #ccc;
+  transition: all 600ms ease-in-out;
+  -webkit-transition: all 600ms ease-in-out;
+  -moz-transition: all 600ms ease-in-out;
+  -o-transition: all 600ms ease-in-out;
+}
+
+#comments-section .comment-load {
+  margin-bottom: 14px;
+}
+
+#comments-section .comment-load .user-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 15px;
+}
+
+#comments-section .comment-load .user-wrapper .user-name {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+#comments-section .comment-load .user-wrapper img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}

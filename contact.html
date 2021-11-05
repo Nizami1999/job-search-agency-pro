@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
      <title>PHPJabbers.com | Free Job Agency Website Template</title>
@@ -16,10 +17,14 @@
      <link rel="stylesheet" href="css/owl.carousel.css">
      <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+          integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
      <!-- PRE LOADER -->
@@ -27,7 +32,7 @@
           <div class="spinner">
 
                <span class="spinner-rotate"></span>
-               
+
           </div>
      </section>
 
@@ -55,8 +60,9 @@
                          <li><a href="about-us.html">About Us</a></li>
                          <li><a href="blog-posts.html">Blog</a></li>
                          <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
-                              
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+
                               <ul class="dropdown-menu">
                                    <li><a href="team.html">Team</a></li>
                                    <li><a href="testimonials.html">Testimonials</a></li>
@@ -74,6 +80,7 @@
           <div class="container">
                <div class="text-center">
                     <h1>Contact Us</h1>
+                    <div style="margin: 0 auto; width: 180px" class="line"></div>
 
                     <br>
 
@@ -91,29 +98,47 @@
                     <div class="col-md-6 col-sm-12">
                          <form id="contact-form" role="form" action="" method="post">
                               <div class="col-md-12 col-sm-12">
-                                   <input type="text" class="form-control" placeholder="Enter full name" name="name" required>
-                    
-                                   <input type="email" class="form-control" placeholder="Enter email address" name="email" required>
+                                   <input type="text" class="form-control" placeholder="Enter full name" name="name"
+                                        required>
 
-                                   <textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required></textarea>
+                                   <input type="email" class="form-control" placeholder="Enter email address"
+                                        name="email" required>
+
+                                   <input type="email" class="form-control" placeholder="Enter title" name="email"
+                                        required>
+
+                                   <textarea class="form-control" rows="6" placeholder="Tell us about your message"
+                                        name="message" required></textarea>
                               </div>
 
                               <div class="col-md-4 col-sm-12">
-                                   <input type="submit" class="form-control" name="send message" value="Send Message">
+                                   <button type="submit" class="form-control btn-submit">Send message</button>
                               </div>
 
                          </form>
                     </div>
 
-                    <div class="col-md-6 col-sm-12">
-                         <div class="contact-image">
-                              <img src="images/contact-1-600x400.jpg" class="img-responsive" alt="">
+                    <div style="margin-top: 25px;" class="col-md-6 col-sm-12">
+                         <div class="contact-info">
+                              <i class="fas fa-phone"></i>
+                              <h4>+36203634648</h4>
+                         </div>
+                         <div class="contact-info">
+                              <i class="fas fa-envelope"></i>
+                              <h4>test@gmail.com</h4>
+                         </div>
+                         <div class="contact-info">
+                              <i class="fas fa-map-pin"></i>
+                              <h4>Hungary, Budapest</h4>
                          </div>
                     </div>
 
+                    <iframe style="margin-top: 24px; width: 100%; border: none"
+                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26751.198774207496!2d19.013978514408635!3d47.509115844758234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c334d1d4cfc9%3A0x400c4290c1e1160!2z0JHRg9C00LDQv9C10YjRgg!5e0!3m2!1sru!2shu!4v1636144022558!5m2!1sru!2shu"
+                         height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                </div>
           </div>
-     </section>       
+     </section>
 
 
      <!-- FOOTER -->
@@ -136,7 +161,7 @@
                                    <li><a href="#" class="fa fa-instagram"></a></li>
                               </ul>
 
-                              <div class="copyright-text"> 
+                              <div class="copyright-text">
                                    <p>Copyright &copy; 2020 Company Name</p>
                                    <p>Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a></p>
                               </div>
@@ -173,15 +198,17 @@
                               <div>
                                    <div class="form-group">
                                         <form action="#" method="get">
-                                             <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" required>
-                                             <input type="submit" class="form-control" name="submit" id="form-submit" value="Send me">
+                                             <input type="email" class="form-control" placeholder="Enter your email"
+                                                  name="email" id="email" required>
+                                             <input type="submit" class="form-control" name="submit" id="form-submit"
+                                                  value="Send me">
                                         </form>
                                         <span><sup>*</sup> Please note - we do not spam your email.</span>
                                    </div>
                               </div>
                          </div>
                     </div>
-                    
+
                </div>
           </div>
      </footer>
@@ -195,4 +222,5 @@
      <script src="js/custom.js"></script>
 
 </body>
+
 </html>
