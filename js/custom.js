@@ -104,10 +104,12 @@
 
   $(function () {
     $("div.comment-load").slice(0, 4).show();
+    debugger;
     $("#loadMore").on("click", function (e) {
       e.preventDefault();
       $("div.comment-load:hidden").slice(0, 4).slideDown();
       if ($("div.comment-load:hidden").length == 0) {
+        $("#loadMore").addClass("none");
         $("#load").fadeOut("slow");
       }
     });

@@ -1574,3 +1574,7 @@ div.comment-load {
   object-fit: cover;
   border-radius: 50%;
 }
+
+.none {
+  display: none !important;
+}
